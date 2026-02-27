@@ -8,6 +8,8 @@ import { Link, useNavigate } from "react-router";
 import * as zod from "zod";
 import AppButton from "../../Shared/AppButton/AppButton";
 import {Profile,User,Sms,Key,Lock,Calendar} from "iconsax-reactjs";
+import myBackImage from "../../assets/myimage-back.jpg"
+
 
 const schema = zod
   .object({
@@ -81,7 +83,8 @@ export default function Register() {
   return (
   <>
     <title>Registeration Page | 88</title>
-    <div className="min-h-screen grid grid-cols-1 md:grid-cols-2 bg-gray-100">
+    <div className="min-h-screen grid grid-cols-1 md:grid-cols-2 bg-gray-100"
+     style={{ backgroundImage: `url(${myBackImage})`}}>
       <div className="hidden md:flex flex-col justify-center items-center bg-linear-to-br from-cyan-500 via-teal-500 to-emerald-500 text-white p-12 relative overflow-hidden">
         <div className="bg-white/20 backdrop-blur-md size-30 flex items-center justify-center rounded-3xl text-5xl font-bold shadow-2xl mb-6">
           88

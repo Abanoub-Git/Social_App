@@ -33,7 +33,7 @@ createRoot(document.getElementById('root')).render(
           <div className="w-10 h-10 flex items-center text-3xl justify-center rounded-full bg-white/20 p-7">
             📡
           </div>
-          <div>
+          <div className="w-full">
             <p className="font-semibold text-md">You're Offline</p>
             <p className="text-sm text-red-100">
               Check your internet connection

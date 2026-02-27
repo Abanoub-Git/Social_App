@@ -10,6 +10,8 @@ import { AuthUserContext } from "../../Context/AuthContextProvider/AuthContextPr
 import { Link } from "react-router";
 import AppButton from "../../Shared/AppButton/AppButton";
 import { Key, Sms } from "iconsax-reactjs";
+import myBackImage from "../../assets/myimage-back.jpg"
+
 
 
 
@@ -73,7 +75,7 @@ export default function Login() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center p-6">
+      <div className="flex justify-center items-center p-6" style={{ backgroundImage: `url(${myBackImage})`}}>
         <Form
           onSubmit={handleSubmit(sendUserLogin)}
           className="w-full max-w-lg bg-white p-10 rounded-3xl shadow-2xl border border-gray-200 transition-all duration-300"
