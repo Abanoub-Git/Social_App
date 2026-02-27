@@ -15,7 +15,7 @@ export default function Layout() {
       {!myMatch && <AppNavbar />}
       <div className="min-h-screen bg-cover bg-center bg-fixed overflow-auto"
         style={{ backgroundImage: `url(${myBackImage})`}}>
-        <div className="min-h-screen bg-linear-to-br from-emerald-600/40 to-white/30 pt-4">
+        <div className={`min-h-screen bg-linear-to-br from-emerald-600/40 to-white/30 ${!myMatch ? "pt-4" : ""}`}>
           <Outlet />
         </div>
       </div>
